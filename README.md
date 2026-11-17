@@ -1,8 +1,8 @@
-# com-etzhayyim-app-omikuji
+# app-itonami-omikuji
 
 omikuji — Omikuji Fortune Platform. Fortune draw and shrine management with
 BPMN-driven workflows. It is the Cloudflare Worker serving
-`omikuji.etzhayyim.com` and `9t84azyt.etzhayyim.com`.
+`omikuji.itonami.cloud` and `9t84azyt.itonami.cloud`.
 
 ## Frontend migrated to ClojureScript (2026-09-07)
 

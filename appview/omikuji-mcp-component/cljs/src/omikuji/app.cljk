@@ -13,8 +13,8 @@
   this migration itself changed:
 
   - `:app/route-count` and `:app/routes` now report what `wrangler.jsonc`
-    actually declares (2 route patterns: `9t84azyt.etzhayyim.com/*` and
-    `omikuji.etzhayyim.com/*`), not the stale `0` / `[]` the Svelte
+    actually declares (2 route patterns: `9t84azyt.itonami.cloud/*` and
+    `omikuji.itonami.cloud/*`), not the stale `0` / `[]` the Svelte
     constant carried.
   - `:app/vars` now reports the 8 keys `wrangler.jsonc`'s `vars` map
     actually declares (sorted), not the stale `[]` the Svelte constant
@@ -41,11 +41,11 @@
 
     (require '[jp-go-dds.page :as page] '[clojure.java.io :as io])
     (spit \"public/index.html\"
-          (page/->page {:title \"etzhayyim-project-omikuji\"
+          (page/->page {:title \"itonami-project-omikuji\"
                          :lang \"ja\"
                          :description \"omikuji — Omikuji Fortune Platform. Fortune draw and shrine management with BPMN-driven workflows.\"
                          :css (slurp (io/resource \"jp_go_dds/dds.css\"))}
-                        [:div {:id \"app\"} \"etzhayyim-project-omikuji loading…\"]
+                        [:div {:id \"app\"} \"itonami-project-omikuji loading…\"]
                         [:script {:src \"js/app.js\"}]))"
   (:require [reagent.dom :as rdom]
             [re-frame.core :as rf]
@@ -58,11 +58,11 @@
 
 (def default-db
   {:app/title "Omikuji Mcp Component"
-   :app/project "etzhayyim-project-omikuji"
+   :app/project "itonami-project-omikuji"
    :app/name "omikuji-mcp-component"
    :app/kind "appview"
    :app/route-count 2
-   :app/routes ["9t84azyt.etzhayyim.com/*" "omikuji.etzhayyim.com/*"]
+   :app/routes ["9t84azyt.itonami.cloud/*" "omikuji.itonami.cloud/*"]
    :app/vars ["AGENTGATEWAY_MCP_ROUTER_URL" "APP_CAPABILITIES" "APP_DESCRIPTION"
               "APP_DISPLAY_NAME" "APP_FRAMEWORK" "APP_NANOID" "APP_PERFORMER_TYPE"
               "APP_UI_TYPE"]

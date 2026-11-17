@@ -13,10 +13,10 @@
     (is (= app/default-db @rf-db/app-db))
     (is (= "Omikuji Mcp Component" @(rf/subscribe [:app/title])))
     (is (= "omikuji-mcp-component" @(rf/subscribe [:app/name])))
-    (is (= "etzhayyim-project-omikuji" @(rf/subscribe [:app/project])))
+    (is (= "itonami-project-omikuji" @(rf/subscribe [:app/project])))
     (is (= "appview" @(rf/subscribe [:app/kind])))
     (is (= 2 @(rf/subscribe [:app/route-count])))
-    (is (= ["9t84azyt.etzhayyim.com/*" "omikuji.etzhayyim.com/*"]
+    (is (= ["9t84azyt.itonami.cloud/*" "omikuji.itonami.cloud/*"]
            @(rf/subscribe [:app/routes])))
     (is (= 8 (count @(rf/subscribe [:app/vars]))))
     (is (false? @(rf/subscribe [:app/xrpc?])))
