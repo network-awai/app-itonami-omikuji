@@ -1,6 +1,6 @@
 {
-  "@context": "https://etzhayyim.com/ns/kotodama/v1",
-  "@id": "did:web:omikuji.etzhayyim.com",
+  "@context": "https://itonami.cloud/ns/kotodama/v1",
+  "@id": "did:web:omikuji.itonami.cloud",
   "name": "omikuji",
   "nanoid": "9t84azyt",
   "project": "omikuji",
@@ -15,7 +15,7 @@
     "avatar": "🎋",
     "isBot": true,
     "agentType": "autonomous",
-    "operator": "etzhayyim",
+    "operator": "itonami",
     "capabilities": ["drawFortune", "listFortunes", "getFortune", "resetFortune", "createShrine", "updateShrine", "listShrines", "getShrine"],
     "protocols": ["xrpc", "mcp"]
   },
@@ -26,8 +26,8 @@
   "triggers": {
     "subscribeRepos": {
       "collections": [
-        "com.etzhayyim.apps.omikuji.fortuneDraw",
-        "com.etzhayyim.apps.omikuji.shrine"
+        "cloud.itonami.apps.omikuji.fortuneDraw",
+        "cloud.itonami.apps.omikuji.shrine"
       ]
     }
   }
